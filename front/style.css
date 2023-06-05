@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    width: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #000000;
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    height: 7%;
+    justify-content: center;
+}
+
+.main-section {
+    height: 93%;
+    background-image: url("images/background-homepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+}
+
+.logo {
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    color: #6c9e8c;
+    font-weight: 700;
+    font-size: 160%;
+    align-items: center;
+    align-content: center!important;
+
+}
+
+.title {
+    color: #FFFFFF;
+}
+
+h1{
+    width: 100%;
+    color: inherit;
+    font-size: 250%;
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.title p {
+    color: inherit;
+    font-size: 150%;
+    justify-content: center;
+    margin-top: 1%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section {
+    align-content: flex-start;
+}
+
+.zone-choix {
+justify-content: center;
+height: 55%;
+gap: 10%;
+margin-top: 5%;
+}
+
+.train-selection, .train-resulat {
+background-color: #FFFFFF;
+width: calc(48%/2);
+border-radius: 10px;
+flex-direction: column;
+padding-top: 10px;
+align-items: center;
+text-align: center;
+}
+
+.date-input {
+    margin-top: 25px;
+}
+
+input {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #eff2f1;
+    border-radius: 5px;
+    border: 1px solid #eff2f1;
+    color: #7b7e7d;
+    padding: 10px 10px 10px 0px;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+
+.date {
+    margin-top: 14%;
+    color: #000000;
+}
+
+input.date::placeholder {
+    padding-left: 10px;
+  }
+
+  input[type="date"] {
+    font-size: 110%;
+  }
+
+#search-button {
+    background-color: #65a786;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    border: 0px;
+    padding: 15px;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.train-resulat .trait_vert {
+    height: 1px;
+    border: 1px solid #65a786;
+    background-color: #65a786;
+    width: 70%;
+    margin: auto;
+    margin-top: 13%;
+    margin-bottom: 5%;
+}
+
+.trait_gris {
+    border: 1px solid #c4c8c7;
+    background-color: #c4c8c7;
+    width: 83%;
+    margin: auto;
+
+
+}
+
+.train-resulat p {
+    justify-content: center;
+    text-align: center;
+}
+
+#logo-train {
+    width: 40%;
+    margin-top: 20%;
+}
+
+#find-your-trip p {
+    margin-top: 8%;
+}
+
+#no-your-trip-found p {
+    margin-top: 8%;
+}
+
+
+.active {display: flex;}
+
+.none {display: none;}
+
+
+.trajets {
+    width: 90%;
+    justify-content: space-around;
+    background-color: #f6f1f0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px !important;
+}
+
+.trajets p {
+    width: calc(95%/3);
+}
+
+@media only screen and (max-width: 680px) {
+    .train-selection, .train-resulat {
+        background-color: #FFFFFF;
+        width: calc(80%/2);
+        border-radius: 10px;
+        flex-direction: column;
+        padding-top: 10px;
+        align-items: center;
+        text-align: center;
+        }
+        .logo {
+            justify-content :center;
+            align-items: center;
+            color: #6c9e8c;
+            font-weight: 700;
+            font-size: 160%;
+        }
+
+        .title p {
+            color: inherit;
+            font-size: 150%;
+            justify-content: center;
+            margin-top: 1%;
+            text-align: center;
+            font-weight: lighter;
+            margin: 10px 10px 4px 10px;
+        }
+
+    }

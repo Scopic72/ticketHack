@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketHack - Je suis prêt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="logo">TicketHack</p>
+    </header>
+    <section class="main-section">
+        
+        <div class="title">
+            <h1>Explore the world effortlessly by train!</h1>
+            <p>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</p>
+        </div>
+        
+        <div class="zone-choix">
+            
+            <div class="train-selection">
+                <div class="date-input">
+                    <input type="text" id="city_departure"  placeholder="Departure">
+                    <div class="trait_gris"></div>
+                    <input type="text" id="city_arrival" placeholder="Arrival">
+                </div>
+                
+                <input class="date" type="date" id="travel_date" name="trip-start" value="2023-02-04" min="2023-02-04" max="2024-07-22">
+
+                <button id="search-button"> Search</button>
+            </div>
+
+
+
+            <div id="find-your-trip" class="train-resulat active">
+                <img id="logo-train" src="images/train.svg" alt="train">
+                <div class="trait_vert"></div>
+                <p>It's time to book your future trip.</p>
+
+            </div>
+
+
+
+            
+            <div id="your-trip" class="train-resulat none">  
+            </div>
+
+
+
+
+            <div id="no-your-trip-found" class="train-resulat none">
+                <img id="logo-train" src="images/train.svg" alt="train">
+                <div class="trait_vert"></div>
+                <p>No trip found</p>
+            </div>
+
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
